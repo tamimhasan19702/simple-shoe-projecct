@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple shoe design</title>
+    <link rel="stylesheet" href="./style.css">
+
+    
+
+</head>
+<body>
+    <div class="container">
+        <div class="product">
+
+
+        <img src="./simple shoe project/images/shoes.png" id="frontimg">
+        <img src="./simple shoe project/images/shoes2.png" id="backimg">
+
+       
+
+
+
+            <div class="product-inner" id="productBox">
+
+
+                <div class="product-front">
+                    <div class="product-top">
+                        <h1>Puma</h1>
+                    </div>
+                    <div class="product-bottom">
+
+                        <p>Puma</p>
+                        <h2>Cool and Classy Shoes 6</h2>
+                        <h1>250 <span> $ </span></h1>
+                        <button type="button">Add to Bag</button>
+                         <div class="color-select">
+
+                             <div class="select-item">
+                                 <img src="./simple shoe project/images/shoes-icon.png" onclick="flipLeft()">
+                             </div>
+                             <div class="select-item">
+                                <img src="./simple shoe project/images/shoes-icon2.png" onclick="flipRight()" >
+                            </div>
+
+                         </div>
+
+                    </div>
+
+                </div>
+
+
+
+
+                <div class="product-back">
+
+                    <div class="product-top product-top2">
+                        <h1>Puma</h1>
+                    </div>
+                    <div class="product-bottom">
+
+                        <p>Puma</p>
+                        <h2>Cool and Classy Shoes 6</h2>
+                        <h1>250 <span> $ </span></h1>
+                        <button type="button">Add to Bag</button>
+                         <div class="color-select">
+
+                             <div class="select-item">
+                                 <img src="./simple shoe project/images/shoes-icon.png" onclick="flipLeft()" >
+                             </div>
+                             <div class="select-item">
+                                <img src="./simple shoe project/images/shoes-icon2.png" onclick="flipRight()" >
+                            </div>
+
+                         </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="right-side"></div>
+                <div class="left-side"></div>
+            
+            
+            </div>
+        </div>
+    </div>
+
+
+<script>
+
+var productBox = document.getElementById("productBox");
+var frontimg = document.getElementById("frontimg");
+var backimg = document.getElementById("backimg");
+
+
+function flipRight(){
+    productBox.style.transform = "rotateY(180deg)";
+    frontimg.style.left = "650px";
+    backimg.style.left = "20px";
+    frontimg.style.transform = "rotateY(-30deg)";
+    backimg.style.transform = "rotateY(0deg)";
+    
+}
+
+function flipLeft(){
+    productBox.style.transform = "rotateY(0deg)";
+    frontimg.style.left = "20px";
+    backimg.style.left = "-650px";
+    frontimg.style.transform = "rotateY(0deg)";
+    backimg.style.transform = "rotateY(-30deg)";
+}
+
+</script>
+ 
+
+</body>
+</html>
